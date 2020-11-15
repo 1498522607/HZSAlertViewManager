@@ -21,6 +21,7 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		6E734C302561635800A767B7 /* HZSCustomAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E734C2F2561635800A767B7 /* HZSCustomAlertView.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		7D780C6B95DE8A4D973AB2DD /* Pods_HZSAlertViewManager_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B3312CE2F12A3F33536529 /* Pods_HZSAlertViewManager_Example.framework */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
@@ -37,7 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		21F29CD9594B5652A0A72BDC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		21F29CD9594B5652A0A72BDC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		226A80CF6807CEDBCC990E5F /* Pods-HZSAlertViewManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HZSAlertViewManager_Example.release.xcconfig"; path = "Target Support Files/Pods-HZSAlertViewManager_Example/Pods-HZSAlertViewManager_Example.release.xcconfig"; sourceTree = "<group>"; };
 		34B3312CE2F12A3F33536529 /* Pods_HZSAlertViewManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HZSAlertViewManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* HZSAlertViewManager_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HZSAlertViewManager_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,11 +60,13 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		6E734C2E2561635800A767B7 /* HZSCustomAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZSCustomAlertView.h; sourceTree = "<group>"; };
+		6E734C2F2561635800A767B7 /* HZSCustomAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZSCustomAlertView.m; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A1A9BE27A3C7D54AF997B5F /* Pods-HZSAlertViewManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HZSAlertViewManager_Tests.release.xcconfig"; path = "Target Support Files/Pods-HZSAlertViewManager_Tests/Pods-HZSAlertViewManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		895EF448D60DFF352C38CBCA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		96546F4274DE33B60700C183 /* HZSAlertViewManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = HZSAlertViewManager.podspec; path = ../HZSAlertViewManager.podspec; sourceTree = "<group>"; };
+		895EF448D60DFF352C38CBCA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		96546F4274DE33B60700C183 /* HZSAlertViewManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HZSAlertViewManager.podspec; path = ../HZSAlertViewManager.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B45F664153B2B158B8021C54 /* Pods-HZSAlertViewManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HZSAlertViewManager_Example.debug.xcconfig"; path = "Target Support Files/Pods-HZSAlertViewManager_Example/Pods-HZSAlertViewManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E3E896340D404D37A4EA725F /* Pods-HZSAlertViewManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HZSAlertViewManager_Tests.debug.xcconfig"; path = "Target Support Files/Pods-HZSAlertViewManager_Tests/Pods-HZSAlertViewManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		EDEB26D786B011983846F474 /* Pods_HZSAlertViewManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HZSAlertViewManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,6 +143,8 @@
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				6E734C2E2561635800A767B7 /* HZSCustomAlertView.h */,
+				6E734C2F2561635800A767B7 /* HZSCustomAlertView.m */,
 			);
 			name = "Example for HZSAlertViewManager";
 			path = HZSAlertViewManager;
@@ -193,7 +198,6 @@
 				E3E896340D404D37A4EA725F /* Pods-HZSAlertViewManager_Tests.debug.xcconfig */,
 				7A1A9BE27A3C7D54AF997B5F /* Pods-HZSAlertViewManager_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -259,6 +263,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -385,6 +390,7 @@
 			files = (
 				6003F59E195388D20070C39A /* HZSAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* HZSViewController.m in Sources */,
+				6E734C302561635800A767B7 /* HZSCustomAlertView.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

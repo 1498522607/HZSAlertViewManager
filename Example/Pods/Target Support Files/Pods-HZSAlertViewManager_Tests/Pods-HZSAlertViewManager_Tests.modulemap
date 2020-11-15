@@ -1,0 +1,6 @@
+framework module Pods_HZSAlertViewManager_Tests {
+  umbrella header "Pods-HZSAlertViewManager_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

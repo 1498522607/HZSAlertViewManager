@@ -1,0 +1,6 @@
+framework module Pods_HZSAlertViewManager_Example {
+  umbrella header "Pods-HZSAlertViewManager_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

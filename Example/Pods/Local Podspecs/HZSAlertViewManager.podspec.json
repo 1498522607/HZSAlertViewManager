@@ -1,0 +1,22 @@
+{
+  "name": "HZSAlertViewManager",
+  "version": "0.1.0",
+  "summary": "A short description of HZSAlertViewManager.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/1498522607@qq.com/HZSAlertViewManager",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "1498522607@qq.com": "huangzushu@ds.cn"
+  },
+  "source": {
+    "git": "https://github.com/1498522607@qq.com/HZSAlertViewManager.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "HZSAlertViewManager/Classes/**/*"
+}

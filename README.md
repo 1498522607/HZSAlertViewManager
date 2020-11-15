@@ -8,6 +8,23 @@
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
+```ruby
+[[HZSAlertViewManager shareManager] showWithExecuteBlock:^{
+    [[[HZSCustomAlertView alloc] init] showInView:self.view dissMiss:^{
+        //消失时调用dissmiss
+        [[HZSAlertViewManager shareManager] dismissWithExecuteBlock:nil];
+    }];
+}];
+
+[[HZSAlertViewManager shareManager] showWithExecuteBlock:^{
+    UIAlertController * alertV = [UIAlertController alertControllerWithTitle:@"弹出" message:@"系统弹窗" preferredStyle:UIAlertControllerStyleAlert];
+    [alertV addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        //消失时调用dissmiss
+        [[HZSAlertViewManager shareManager] dismissWithExecuteBlock:nil];
+    }]];
+    [self presentViewController:alertV animated:YES completion:nil];
+}];
+```
 
 ## Requirements
 
@@ -22,7 +39,7 @@ pod 'HZSAlertViewManager'
 
 ## Author
 
-1498522607@qq.com, huangzushu@ds.cn
+古德猫宁，1498522607@qq.com
 
 ## License
 

@@ -1,0 +1,27 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - HZSAlertViewManager (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - HZSAlertViewManager (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  HZSAlertViewManager:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  HZSAlertViewManager: 4ec06624ecb95ef6b6eb07d5d4f93f1fb188ff6d
+
+PODFILE CHECKSUM: 5947a7712d9d4b8ac2358208f7c0653f6e9c8cfa
+
+COCOAPODS: 1.9.3

@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="whP-gf-Uak">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="whP-gf-Uak">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,7 +19,39 @@
                     <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvm-gC-hu7">
+                                <rect key="frame" x="16" y="0.0" width="343" height="100"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="b0j-QK-fZ6"/>
+                                </constraints>
+                                <state key="normal" title="不处理"/>
+                                <connections>
+                                    <action selector="noDealBtnOnClickAction:" destination="whP-gf-Uak" eventType="touchUpInside" id="khM-lY-Zmq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8bQ-iZ-wwl">
+                                <rect key="frame" x="16" y="150" width="343" height="100"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="f5C-y6-cf8"/>
+                                </constraints>
+                                <state key="normal" title="顺序弹出"/>
+                                <connections>
+                                    <action selector="btnOnClickAction:" destination="whP-gf-Uak" eventType="touchUpInside" id="K3D-96-m4p"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8bQ-iZ-wwl" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leadingMargin" id="5AH-t5-ALc"/>
+                            <constraint firstItem="cvm-gC-hu7" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" id="Eae-AC-Xbl"/>
+                            <constraint firstItem="cvm-gC-hu7" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leadingMargin" id="O0h-Gt-dZN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8bQ-iZ-wwl" secondAttribute="trailing" id="ekA-5o-M3f"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cvm-gC-hu7" secondAttribute="trailing" id="m6J-yO-2L7"/>
+                            <constraint firstItem="8bQ-iZ-wwl" firstAttribute="top" secondItem="cvm-gC-hu7" secondAttribute="bottom" constant="50" id="o9X-pe-lv4"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -28,4 +59,12 @@
             <point key="canvasLocation" x="305" y="433"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

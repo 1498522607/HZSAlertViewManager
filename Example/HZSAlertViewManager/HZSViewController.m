@@ -7,6 +7,9 @@
 //
 
 #import "HZSViewController.h"
+#import "HZSAlertViewManager.h"
+#import "HZSCustomAlertView.h"
+
 
 @interface HZSViewController ()
 
@@ -25,5 +28,36 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (IBAction)noDealBtnOnClickAction:(id)sender {
+    [[[HZSCustomAlertView alloc] init] showInView:self.view dissMiss:^{
+        
+    }];
+    UIAlertController * alertV = [UIAlertController alertControllerWithTitle:@"弹出" message:@"系统弹窗" preferredStyle:UIAlertControllerStyleAlert];
+    [alertV addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        
+    }]];
+    [self presentViewController:alertV animated:YES completion:nil];
+}
+
+- (IBAction)btnOnClickAction:(id)sender {
+    [[HZSAlertViewManager shareManager] showWithExecuteBlock:^{
+        [[[HZSCustomAlertView alloc] init] showInView:self.view dissMiss:^{
+            //消失时调用dissmiss
+            [[HZSAlertViewManager shareManager] dismissWithExecuteBlock:nil];
+        }];
+    }];
+    
+    [[HZSAlertViewManager shareManager] showWithExecuteBlock:^{
+        UIAlertController * alertV = [UIAlertController alertControllerWithTitle:@"弹出" message:@"系统弹窗" preferredStyle:UIAlertControllerStyleAlert];
+        [alertV addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            //消失时调用dissmiss
+            [[HZSAlertViewManager shareManager] dismissWithExecuteBlock:nil];
+        }]];
+        [self presentViewController:alertV animated:YES completion:nil];
+    }];
+}
+
+
 
 @end

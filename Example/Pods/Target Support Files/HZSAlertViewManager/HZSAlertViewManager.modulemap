@@ -1,0 +1,6 @@
+framework module HZSAlertViewManager {
+  umbrella header "HZSAlertViewManager-umbrella.h"
+
+  export *
+  module * { export * }
+}
