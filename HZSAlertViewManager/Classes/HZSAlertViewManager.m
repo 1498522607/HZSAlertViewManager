@@ -27,7 +27,7 @@ static void _AlertViewInitGlobalSEM() {
         dispatch_semaphore_wait(_globalInstancesLockSEM, DISPATCH_TIME_FOREVER);
         dispatch_async(dispatch_get_main_queue(), ^{
             if (executeBlock) {
-                executeBlock();
+                executeBlock(self);
             }
         });
     });
@@ -38,14 +38,14 @@ static void _AlertViewInitGlobalSEM() {
         dispatch_semaphore_signal(_globalInstancesLockSEM);
         dispatch_async(dispatch_get_main_queue(), ^{
             if (executeBlock) {
-                executeBlock();
+                executeBlock(self);
             }
         });
     });
 }
 
 
-+ (instancetype)shareManager {
++ (instancetype)defaultManager {
     return [[self alloc] init];
 }
 

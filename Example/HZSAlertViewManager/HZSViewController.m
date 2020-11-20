@@ -41,18 +41,18 @@
 }
 
 - (IBAction)btnOnClickAction:(id)sender {
-    [[HZSAlertViewManager shareManager] showWithExecuteBlock:^{
+    [[HZSAlertViewManager defaultManager] showWithExecuteBlock:^(HZSAlertViewManager *defaultManager) {
         [[[HZSCustomAlertView alloc] init] showInView:self.view dissMiss:^{
             //消失时调用dissmiss
-            [[HZSAlertViewManager shareManager] dismissWithExecuteBlock:nil];
+            [defaultManager dismissWithExecuteBlock:nil];
         }];
     }];
     
-    [[HZSAlertViewManager shareManager] showWithExecuteBlock:^{
+    [[HZSAlertViewManager defaultManager] showWithExecuteBlock:^(HZSAlertViewManager *defaultManager) {
         UIAlertController * alertV = [UIAlertController alertControllerWithTitle:@"弹出" message:@"系统弹窗" preferredStyle:UIAlertControllerStyleAlert];
         [alertV addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             //消失时调用dissmiss
-            [[HZSAlertViewManager shareManager] dismissWithExecuteBlock:nil];
+            [defaultManager dismissWithExecuteBlock:nil];
         }]];
         [self presentViewController:alertV animated:YES completion:nil];
     }];
